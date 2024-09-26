@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Página Web</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">        
+    </head>
+    <body>
+        <!--barra de navegacion-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="Imagenes/logo.jpg" alt="Logo"> 
+                </a>
+                <a class="navbar-brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="reservas.html">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mis_reservas.html">Mis reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--tarjetas de seleccion de barbero-->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Imagenes/barbero_1.jpg" class="card-img-top" alt="Barbero Juan Perez">
+                        <div class="card-body">
+                            <h5 class="card-title">Juan Perez</h5>
+                            <p class="card-text">Destaca por su atención al detalle y su compromiso con la excelencia. Su habilidad para crear estilos personalizados y su trato cercano hacen que cada visita a su silla sea una experiencia especial.</p>
+                            <a href="#" class="btn btn-primary">Elegir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Imagenes/barbero_2.jpg" class="card-img-top" alt="Barbero 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepe</h5>
+                            <p class="card-text">Es conocido por su enfoque moderno y su capacidad para adaptarse a las últimas tendencias. Su pasión por la barbería se refleja en cada corte, asegurando que cada cliente salga satisfecho y con un estilo único.</p>
+                            <a href="#" class="btn btn-primary">Elegir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="Imagenes/barbero_3.jpg" class="card-img-top" alt="Barbero 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Fulano</h5>
+                            <p class="card-text">Destaca por su atención al detalle y su compromiso con la excelencia. Su habilidad para crear estilos personalizados y su trato cercano hacen que cada visita a su silla sea una experiencia especial.</p>
+                            <a href="#" class="btn btn-primary">Elegir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--formulario de reserva-->
+        <div class="bg-yellow p-4 rounded mt-4">
+            <h2 class="text-center mb-4">Formulario de Reserva</h2>
+            <form id="reservation-form">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha de reserva</label>
+                    <input type="date" class="form-control" id="date" min="" required>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Hora de reserva</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
