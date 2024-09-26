@@ -209,6 +209,17 @@ body{
     }
 }
 
+/* Si algo sale mal, borrar */
+.row.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap; /* Asegura que las tarjetas estén en una sola fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+}
+
+.card {
+    min-width: 300px; /* Establece un ancho mínimo para las tarjetas */
+}
+
 
 .card {
     background-color: #f1c40f;
