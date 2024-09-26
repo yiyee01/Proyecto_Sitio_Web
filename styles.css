@@ -11,10 +11,11 @@
 
 @media (max-width: 768px) {
     .contenedor {
-        width: 300%;
-        /* Ocupa el 100% del ancho de la pantalla */
+        width: 100%;
+        padding: 0;
+        margin: 0 auto; 
     }
-
+    
     .carousel-inner img {
         height: auto;
         /* Ajusta la altura automáticamente */
