@@ -11,9 +11,9 @@
 
 @media (max-width: 768px) {
     .contenedor {
-        width: 100%;
+        width: 300%;
         padding: 0;
-        margin: 0 auto; 
+        margin: 20px auto; 
     }
     
     .carousel-inner img {
