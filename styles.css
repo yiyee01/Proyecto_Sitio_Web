@@ -16,9 +16,9 @@
     }
 
     .carousel-inner img {
-        height: 100%;
+        height: auto;
         /* Ajusta la altura automáticamente */
-        width: 80%;
+        width: 100%;
         /* Asegura que las imágenes ocupen el ancho completo */
         object-fit: cover;
     }
