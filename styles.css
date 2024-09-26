@@ -187,18 +187,28 @@ body{
 /*Reservar.html----------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+    .card {
+        margin-bottom: 20px;
     }
-
-    .col-md-4 {
-        flex: 0 0 auto;
-        width: 80%;
-        margin-right: 10px;
+    .card-img-top {
+        height: 150px;
+        object-fit: cover;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 1.2em;
+    }
+    .card-text {
+        font-size: 0.9em;
+    }
+    .btn-primary {
+        padding: 5px 10px;
+        font-size: 0.9em;
     }
 }
+
 
 .card {
     background-color: #f1c40f;
